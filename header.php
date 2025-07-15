@@ -10,11 +10,15 @@
     <header>
         <h1><?php bloginfo( 'name' ); ?></h1>
         <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary', // O ID que registramos no functions.php
+                'container'      => false,     // Não envolver o menu em uma div extra
+                'menu_class'     => 'main-navigation', // Classe CSS para o <ul> gerado
+                'depth'          => 0,
+                //'depth'          => 1,         // Profundidade do menu (1 = sem submenus)
+            ) );
+            ?>
         </nav>
     </header>
 
