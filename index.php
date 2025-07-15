@@ -1,7 +1,9 @@
-<?php get_header(); ?>
+<?php get_header(); //Vai puxar o template header para outras páginas ?> 
+
 
         <main>
             <?php
+            
             // Este é um loop simples do WordPress para exibir posts
             if ( have_posts() ) :
                 while ( have_posts() ) : the_post();
@@ -26,6 +28,6 @@
     <footer>
         <p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. Todos os direitos reservados.</p>
     </footer>
-    <?php wp_footer(); ?>
+    <?php wp_footer(); //Vai puxar o template footer para outras páginas?>
 </body>
 </html>
