@@ -1,0 +1,59 @@
+/*
+Theme Name: greenTheme
+Theme URI: https://seusite.com.br/greenTheme (ou vazio, ou um link de GitHub)
+Author: Seu Nome
+Author URI: https://seusite.com.br
+Description: Um tema simples para iniciantes em WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: greenTheme
+Tags: blog, one-column, custom-background
+*/
+
+
+/* Seus estilos CSS começam aqui */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #eee;
+    color: #333;
+}
